@@ -50,4 +50,25 @@ SQL: SELECT... LIKE ... ORDER BY
 link: https://learnsql.com/blog/using-like-match-patterns-sql/
 
 ### PerformTransaction()
-- 
+1. retrieve part quantity from database -> check if transaction can be performed
+- SQL: SELECT partAvailableQuantity FROM part WHERE partID = 'input part id'
+2. perform transaction (update transaction records, part quantity)
+- UPDATE transaction SET partAvailableQuantity = new_quantity WHERE partID = 'input partid'
+sql update: https://www.w3schools.com/sql/sql_update.asp
+
+## Manager
+### ListSalesperson()
+- list salesperson in asc/desc order of years of exp
+- SELECT * FROM salesperson ORDER BY yearsExp asc/desc;
+
+### CountTransaction()
+- count #transac record of each salesperson within given range of exp
+* prob most complicated sql, need nested statement
+
+### ListManufacturers()
+- list namufacturers in desc order of total sales value
+
+### ListParts()
+- show N most popular parts
+- COUNT, WHERE
+- extra filtering of #transaction > 0
