@@ -19,6 +19,7 @@ try {
 ### CreateTables()
 - create the five tables
 - sql: CREATE TABLE TABLE_NAME (attr1 type, attr2 type);
+
 ? not sure if need to do checking -> how to handle if table exists:
 1. drop all tables first (remove all current entries)
 2. ignore that table (keep all current entries)
@@ -28,6 +29,7 @@ try {
 - drop all tables
 - sql DROP TABLE_NAME 
 - not sure if checking needed (preferrably to avoid crashing)
+
 Link: drop table if exists
 https://www.mssqltips.com/sqlservertip/6769/sql-server-drop-table-if-exists/
 
